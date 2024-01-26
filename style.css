@@ -1,0 +1,129 @@
+:root {
+  --btn-bg-color: #423f3e;
+  --black: #000;
+  /* --default-border: 1px solid red; */
+  --black-900: #2b2b2b;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #ebebeb;
+  padding: 0 120px;
+  font-family: verdana;
+  font-size: 16px;
+  font-style: normal;
+  overflow-x: hidden;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: var(--default-border);
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+.nav-list li {
+  list-style: none;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: var(--black-900);
+  font-weight: 600;
+  line-height: 150%;
+  padding-bottom: 5px;
+  transition: all 0.1s ease;
+}
+.nav-list li a:hover {
+  border-bottom: 2px solid var(--btn-bg-color);
+}
+
+button.nav-btn {
+  border: none;
+  background-color: var(--btn-bg-color);
+  padding: 11px 15px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  /* line-height: 28px; */
+}
+button.nav-btn:hover {
+  background-color: var(--black);
+}
+
+.hero-section {
+  text-align: center;
+  border: var(--default-border);
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 140px;
+}
+.hero-section h1 {
+  color: var(--black-900);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%; /* 76.8px */
+}
+.hero-section p {
+  color: var(--black-900);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+}
+.hero-section .nav-btn {
+  padding: 16px 32px;
+}
+
+/* Css for Section 1 */
+section.section1 {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  column-gap: 4%;
+  align-items: center;
+}
+.read-more-container {
+  display: flex;
+  column-gap: 20px;
+}
+.section1 .img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.section1 .sec-text h2 {
+  color: var(--black-900);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.section1 p {
+  color: var(--black-900);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section1 button {
+  color: var(--black-900);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.section1 button:hover {
+  text-decoration: underline;
+}
